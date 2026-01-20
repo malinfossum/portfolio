@@ -1,65 +1,98 @@
-<!-- Banner -->
-![Banner](https://raw.githubusercontent.com/malinfossum/portfolio-website/main/MalinFossum_Banner_Web.png)
+# 🌿 Malin Fossum — Portfolio Website
+
+![Portfolio Banner](assets/images/MalinFossum_Banner_Web.png)
+
+> **Tech with empathy. Code with purpose.**
+
+This repository contains the source code for my personal portfolio website — a clean, minimal, and performance-focused site built to grow alongside my journey into software development.
+
+🔗 **Live site:**
+👉 https://malinfossum.github.io/portfolio-website/
 
 ---
 
-### 🖥️ Preview
-<p align="center">
-  <img width="2542" height="1058" alt="Portfolio Preview" src="https://github.com/user-attachments/assets/dac21eb4-f526-4e9e-98ae-c506a09a3a3b"/>
-</p>
+## ✨ About
+
+Hi, I’m **Malin Fossum**, a coding student based in Norway 🇳🇴
+I’m transitioning from **social work** to **software development**, bringing with me a strong focus on:
+
+- empathy & accessibility
+- clear structure and readability
+- human-centered design
+
+This portfolio is intentionally **simple, calm, and honest** — designed to reflect where I am now, not where I pretend to be.
+
+> _“Built with empathy and intention.”_
 
 ---
 
-### 🧠 About
+## 🎓 Current Focus
 
-Hi there! 👋  
-I’m **Malin Fossum**, on my way to becoming a **Full-Stack Engineer** from 🇳🇴 **Norway**.  
-My journey started in **social work**, where I learned the importance of empathy, accessibility, and human-centered design.  
-Now, I’m blending those values with code to create digital solutions that make a real difference.
+- 📚 **GET Academy — Start IT** (full-time coding study)
+- 🧠 Learning fundamentals deeply before scaling complexity
+- 🛠️ Building small, real projects and documenting the process
 
-This site is my personal space — built from scratch, designed in dark mode, and crafted to grow with my learning journey.  
-
-> “Tech with empathy. Code with purpose.” 🌙
+This site will evolve as my skills and projects grow.
 
 ---
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,python,github,vscode" alt="Tech Stack" />
-</p>
-
-- **HTML5**, **CSS3**, **JavaScript (ES6+)**
-- Responsive design and accessibility-first approach
-- Smooth dark/light theme toggle
+- **HTML5**
+- **CSS3**
+- Responsive layout (mobile-first)
+- Accessibility-aware structure
+- Dark-mode–first design
 - Deployed with **GitHub Pages**
 
----
-
-### 🌟 Featured Highlights
-
-| 💡 Project | 🔍 Description | 🔗 Links |
-|-------------|----------------|----------|
-| **Portfolio Website** | My personal site: clean, minimal, and accessible — built to grow with me. | [GitHub](https://github.com/malinfossum/portfolio-website) |
-| **Full-Stack Capstone** | A Codecademy project combining frontend + backend to build purposeful apps. | [GitHub](https://github.com/malinfossum/fullstack-capstone) |
-| **Python Experiments** | Exploring logic, data structures, and problem-solving through small projects. | [GitHub](https://github.com/malinfossum/python-mini-projects) |
+No frameworks. No build tools.
+Just clean, understandable web fundamentals.
 
 ---
 
-### 🚀 Live Demo
-🌐 **[malinfossum.github.io](https://malinfossum.github.io)**
+## 📂 Project Highlights
+
+| Project | Description | Links |
+|------|------------|-------|
+| **Portfolio Website** | My personal site — minimal, accessible, and performance-focused | [Repo](https://github.com/malinfossum/portfolio-website) |
+| **Study Builds** | Small projects created during GET Academy (added gradually) | _Coming soon_ |
+
+> I prefer adding projects when they are **meaningful and documented**, rather than rushing to fill space.
 
 ---
 
-### 💌 Contact
+## 🚀 Local Development
+
+You can run the site locally in several simple ways:
+
+### Option 1: VS Code Live Server
+1. Open the project in VS Code
+2. Right-click `index.html`
+3. Choose **Open with Live Server**
+
+### Option 2: Open directly
+Just open `index.html` in your browser.
+
+---
+
+## 🌐 Deployment
+
+The site is deployed using **GitHub Pages**:
+
+- Branch: `main`
+- Folder: `/ (root)`
+- Static HTML/CSS (no build step)
+
+---
+
+## 📬 Contact
+
+- 💼 GitHub: https://github.com/malinfossum
+- 🔗 LinkedIn: https://linkedin.com/in/malinfossum
+- ✉️ Email: malinfossum.dev@proton.me
+
+---
 
 <p align="center">
-  <a href="mailto:malinfossum.dev@proton.me"><img src="https://img.shields.io/badge/Email%20Me-%F0%9F%93%A7-blue?style=for-the-badge" alt="Email"/></a>
-  <a href="https://github.com/malinfossum"><img src="https://img.shields.io/badge/GitHub-%23181717.svg?logo=github&logoColor=white&style=for-the-badge" alt="GitHub"/></a>
+🌱 Built with empathy, curiosity, and a love for learning.
 </p>
-
-<p align="center">🌿 Built with empathy, curiosity, and a love for learning</p>
-
----
-
-<sub><p align="center">© 2025 Malin Fossum — Creating technology with empathy and impact.</p></sub>

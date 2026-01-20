@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Web Performance Checklist — Dark Elegance</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 16px;color:#111}
+      h1{font-size:26px;margin-bottom:4px}
+      h2{margin-top:24px}
+      hr{border:none;border-top:2px solid #D9B646;margin:12px 0}
+      .muted{color:#555}
+      li{margin:6px 0}
+      footer{margin-top:24px;color:#666;font-style:italic}
+    </style></head><body>
+    <h1>Web Performance Checklist — Dark Elegance Edition</h1>
+    <div class="muted">Quick, practical steps to keep your portfolio fast, accessible, and elegant on every device.</div>
+    <hr>
+    <h2>Images (Hero Banner & Media)</h2>
+    <ul>
+      <li>Prefer WebP for modern browsers, with JPG/PNG fallback via &lt;picture&gt;.</li>
+      <li>Export sizes: desktop 1920×960, mobile 1000×1000 (when available).</li>
+      <li>Compression: WebP ~80% quality; JPG ~75–85%; strip metadata for web.</li>
+      <li>Add width/height (or CSS aspect-ratio) to prevent layout shift.</li>
+      <li>Preload critical hero image with &lt;link rel="preload" as="image"&gt;.</li>
+      <li>Use sizes="100vw" so the browser picks the right resource.</li>
+      <li>Set decoding="async" and loading="lazy" for below-the-fold media.</li>
+    </ul>
+    <h2>CSS &amp; Rendering</h2>
+    <ul>
+      <li>Respect prefers-reduced-motion; disable heavy animations for those users.</li>
+      <li>Keep animations to opacity/transform for GPU-friendly transitions.</li>
+      <li>Use mask-image or gradient edges for soft blends without large PNGs.</li>
+      <li>Minimize unused CSS; ship only what the page needs.</li>
+    </ul>
+    <h2>Fonts (Urbanist &amp; Outfit)</h2>
+    <ul>
+      <li>Preconnect to fonts.gstatic.com and use display=swap to avoid FOIT.</li>
+      <li>Only load the weights/styles you use (Urbanist 400/700; Outfit 400/600/400-italic).</li>
+      <li>Set fallbacks: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif.</li>
+    </ul>
+    <h2>HTML Markup</h2>
+    <ul>
+      <li>Use &lt;picture&gt; with type hints (image/webp, image/jpeg) + media queries for responsive sources.</li>
+      <li>Include descriptive alt text for accessibility and SEO.</li>
+      <li>Place hero near top of DOM; add fetchpriority="high" to the primary &lt;img&gt;.</li>
+    </ul>
+    <h2>Caching &amp; Hosting</h2>
+    <ul>
+      <li>Version image filenames when you update them (e.g., _v2).</li>
+      <li>Use GitHub Pages (or a CDN) which serves static assets efficiently.</li>
+      <li>Keep your repo tidy: /assets/images/ for media; document sizes in README.</li>
+    </ul>
+    <h2>Quick Audit (before publishing)</h2>
+    <ul>
+      <li>Lighthouse: check Performance &amp; Accessibility scores.</li>
+      <li>Largest Contentful Paint (LCP) &lt; ~2.5s on slow 4G emulation.</li>
+      <li>No layout shift when the banner loads (CLP stable).</li>
+      <li>Dark mode contrast: text vs background ≥ 4.5:1 where applicable.</li>
+    </ul>
+    <hr>
+    <footer>© 2025 Malin Fossum — Created with empathy and intention.</footer>
+    </body></html>
