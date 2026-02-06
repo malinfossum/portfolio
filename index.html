@@ -6,15 +6,18 @@
 
     <meta
       name="description"
-      content="Malin Fossum — Portfolio showcasing full-stack engineering projects created with empathy and intention."
+      content="Malin Fossum — A minimal, accessible portfolio documenting my transition from social work to software development."
     />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+
     <title>Malin Fossum — Portfolio</title>
 
     <!-- Open Graph -->
     <meta property="og:title" content="Malin Fossum — Portfolio" />
     <meta
       property="og:description"
-      content="Full-stack engineering projects created with empathy and intention."
+      content="A calm, performance-focused portfolio built with empathy and intention."
     />
     <meta
       property="og:image"
@@ -22,7 +25,7 @@
     />
     <meta property="og:type" content="website" />
 
-    <!-- Fonts: Urbanist (display) + Outfit (body) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,600;1,400&family=Urbanist:wght@400;700&display=swap"
@@ -31,29 +34,22 @@
 
     <!-- Preload hero banner -->
     <link
-  rel="preload"
-  as="image"
-  href="assets/images/MalinFossum_Banner_Web.png"
-  imagesrcset="assets/images/MalinFossum_Banner_Web.png 1920w"
-  imagesizes="100vw"
-/>
+      rel="preload"
+      as="image"
+      href="assets/images/MalinFossum_Banner_Web.png"
+    />
 
     <style>
-      /* === Base === */
       :root {
-        --font-display: "Urbanist", system-ui, -apple-system, Segoe UI, Roboto,
-          Arial, sans-serif;
-        --font-body: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial,
-          sans-serif;
+        --font-display: "Urbanist", system-ui, sans-serif;
+        --font-body: "Outfit", system-ui, sans-serif;
 
         --bg: #000;
         --text: #e0e0e0;
         --text-soft: #cfcfcf;
 
         --gold: #d9b646;
-        --gold-soft: rgba(217, 182, 70, 0.18);
         --line: rgba(217, 182, 70, 0.15);
-        --shadow: rgba(217, 182, 70, 0.06);
 
         --radius: 16px;
         --max: 980px;
@@ -74,17 +70,14 @@
         color: var(--text);
         font-family: var(--font-body);
         line-height: 1.65;
-        overflow-x: hidden;
       }
 
       h1,
       h2,
-      h3,
-      .brand {
+      h3 {
         font-family: var(--font-display);
         color: #f5f5f5;
         font-weight: 700;
-        letter-spacing: 0.2px;
       }
 
       p {
@@ -100,7 +93,6 @@
         color: #f0d97c;
       }
 
-      /* Skip link */
       .skip-link {
         position: absolute;
         left: -999px;
@@ -112,94 +104,33 @@
         color: #fff;
         z-index: 999;
       }
+
       .skip-link:focus {
         left: 14px;
       }
 
-      /* === Smooth Top Divider (tighter) === */
       .top-divider {
-        width: 100%;
-        height: 64px; /* was 120px */
+        height: 64px;
         background: linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 0.7) 35%,
-          rgba(0, 0, 0, 0.25) 70%,
-          rgba(0, 0, 0, 0) 100%
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 0)
         );
-        opacity: 0;
-        animation: fadeInDividerTop 1.1s ease-in-out 0.2s forwards;
       }
 
-      @keyframes fadeInDividerTop {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      .hero-banner {
+        padding: 12px 20px 0;
+        position: relative;
       }
 
-      /* === Hero Banner === */
-.hero-banner {
-  background: #000;
-  padding: 12px 20px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-banner img {
-  display: block;
-  width: min(100%, var(--max));
-  height: auto;
-  margin: 0 auto;
-  border-radius: 22px;
-  border: 1px solid var(--line);
-  box-shadow: 0 12px 50px rgba(217, 182, 70, 0.06);
-}
-
-      @keyframes fadeInHero {
-        from {
-          opacity: 0;
-          transform: translateY(-8px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      .hero-banner img {
+        display: block;
+        width: min(100%, var(--max));
+        margin: 0 auto;
+        border-radius: 22px;
+        border: 1px solid var(--line);
       }
 
-      /* Soft vignette overlay */
-      .hero-banner::before {
-        content: "";
-        position: absolute;
-        inset: 0 0 auto 0;
-        height: 140px;
-        pointer-events: none;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.85) 0%,
-          rgba(0, 0, 0, 0.45) 40%,
-          rgba(0, 0, 0, 0) 100%
-        );
-        opacity: 0;
-        animation: fadeInHeroTop 1.2s ease-in-out 0.3s forwards;
-      }
-
-      @keyframes fadeInHeroTop {
-        from {
-          opacity: 0;
-          transform: translateY(-6px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* === Main layout === */
       main {
         width: 100%;
       }
@@ -212,48 +143,31 @@
 
       .stack {
         display: grid;
-        gap: 14px;
+        gap: 18px;
       }
 
       .card {
         border: 1px solid var(--line);
         border-radius: var(--radius);
-        padding: 22px 22px;
+        padding: 22px;
         background: rgba(255, 255, 255, 0.02);
-        box-shadow: 0 10px 40px rgba(217, 182, 70, 0.04);
-      }
-
-      .card h1 {
-        font-size: clamp(1.55rem, 3.2vw, 2.2rem);
-        margin-bottom: 8px;
-      }
-
-      .card h2 {
-        font-size: 1.15rem;
-        margin-bottom: 10px;
       }
 
       .meta {
-        display: inline-flex;
-        gap: 10px;
-        align-items: center;
+        display: flex;
         flex-wrap: wrap;
+        gap: 10px;
         margin-top: 14px;
         padding-top: 14px;
-        border-top: 1px solid rgba(217, 182, 70, 0.12);
+        border-top: 1px solid var(--line);
       }
 
       .pill {
-        display: inline-flex;
-        align-items: center;
         padding: 6px 10px;
         border-radius: 999px;
         border: 1px solid rgba(217, 182, 70, 0.28);
         background: rgba(217, 182, 70, 0.08);
-        color: #f2e7c0;
-        font-size: 0.92rem;
-        line-height: 1;
-        letter-spacing: 0.2px;
+        font-size: 0.9rem;
       }
 
       .cta-row {
@@ -264,24 +178,11 @@
       }
 
       .cta {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
         padding: 10px 14px;
         border-radius: 999px;
-        text-decoration: none;
-        color: #000;
         background: var(--gold);
-        font-weight: 700;
-        transition: transform 0.2s ease, box-shadow 0.2s ease,
-          background 0.2s ease;
-      }
-
-      .cta:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 26px rgba(217, 182, 70, 0.14);
-        background: #e6c75a;
         color: #000;
+        font-weight: 700;
       }
 
       .cta.secondary {
@@ -291,132 +192,49 @@
         font-weight: 600;
       }
 
-      .cta.secondary:hover {
-        background: rgba(217, 182, 70, 0.08);
-        color: #f0d97c;
-        box-shadow: none;
-      }
-
-      .list {
-        margin-top: 10px;
-        display: grid;
-        gap: 10px;
-      }
-
       .project {
         border: 1px solid rgba(217, 182, 70, 0.12);
         border-radius: 14px;
-        padding: 14px 14px;
-        background: rgba(255, 255, 255, 0.01);
-        transition: transform 0.18s ease, border-color 0.18s ease;
-      }
-
-      .project:hover {
-        transform: translateY(-2px);
-        border-color: rgba(217, 182, 70, 0.22);
+        padding: 14px;
       }
 
       .project-title {
         display: flex;
-        align-items: baseline;
         justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 4px;
-      }
-
-      .project-title h3 {
-        font-size: 1.02rem;
-        font-weight: 700;
-      }
-
-      .project small {
-        color: rgba(224, 224, 224, 0.65);
+        margin-bottom: 6px;
       }
 
       .tags {
         display: flex;
-        flex-wrap: wrap;
         gap: 8px;
+        flex-wrap: wrap;
         margin-top: 10px;
       }
 
       .tag {
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         padding: 5px 9px;
         border-radius: 999px;
         border: 1px solid rgba(217, 182, 70, 0.18);
-        color: rgba(224, 224, 224, 0.85);
-        background: rgba(217, 182, 70, 0.04);
       }
 
-      /* === Smooth Footer Divider (tighter) === */
       .footer-divider {
-        width: 100%;
-        height: 72px; /* was 120px */
+        height: 72px;
+        margin-top: 54px;
         background: linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.25) 40%,
-          rgba(0, 0, 0, 0.75) 75%,
-          rgba(0, 0, 0, 1) 100%
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1)
         );
-        margin-top: 54px; /* was 100px */
-        opacity: 0;
-        animation: fadeInDivider 1.35s ease-in-out 0.45s forwards;
       }
 
-      @keyframes fadeInDivider {
-        from {
-          opacity: 0;
-          transform: translateY(16px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* === Footer === */
-      .footer {
+      footer {
         text-align: center;
-        padding: 28px 20px; /* was 40px */
-        background: transparent;
+        padding: 28px 20px;
         border-top: 1px solid var(--line);
-        color: #ccc;
-        font-family: var(--font-body);
         font-size: 0.95rem;
-        line-height: 1.7;
-        animation: fadeInFooter 1.1s ease-in-out both;
       }
 
-      .footer a {
-        color: var(--gold);
-        font-weight: 600;
-        transition: color 0.3s ease, text-shadow 0.3s ease;
-      }
-
-      .footer a:hover {
-        color: #f0d97c;
-        text-shadow: 0 0 8px rgba(217, 182, 70, 0.35);
-      }
-
-      .footer p {
-        margin: 6px 0;
-        letter-spacing: 0.2px;
-      }
-
-      @keyframes fadeInFooter {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* Social icons */
       .social-icons {
         display: flex;
         justify-content: center;
@@ -424,73 +242,10 @@
         margin: 18px 0;
       }
 
-      .social-icons a {
-        color: var(--gold);
-        width: 28px;
-        height: 28px;
-        transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-      }
-
-      .social-icons a:hover {
-        color: #f0d97c;
-        transform: translateY(-3px) scale(1.05);
-        text-shadow: 0 0 10px rgba(217, 182, 70, 0.35);
-      }
-
-      .social-icons svg {
-        width: 100%;
-        height: 100%;
-        fill: currentColor;
-      }
-
-      /* Responsive tightening */
-      @media (max-width: 768px) {
-        .top-divider {
-          height: 42px;
-        }
-        .wrap {
-          padding-top: 32px;
-        }
-        .footer-divider {
-          height: 56px;
-          margin-top: 38px;
-        }
-        .card {
-          padding: 18px 16px;
-        }
-      }
-
-      /* Reduced motion */
       @media (prefers-reduced-motion: reduce) {
         html:focus-within {
           scroll-behavior: auto;
         }
-        .top-divider,
-        .hero-banner::before,
-        .hero-banner img,
-        .footer-divider,
-        .footer {
-          animation: none !important;
-          opacity: 1 !important;
-          transform: none !important;
-        }
-        .project,
-        .cta {
-          transition: none !important;
-        }
-      }
-      .hero-banner::after {
-        content: "";
-        position: absolute;
-        inset: auto 0 0 0;
-        height: 80px;
-        background: linear-gradient(
-          to bottom,
-          rgba(0,0,0,0),
-          rgba(0,0,0,0.6),
-          rgba(0,0,0,1)
-        );
-        pointer-events: none;
       }
     </style>
   </head>
@@ -498,49 +253,36 @@
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
 
-    <!-- Smooth Top Divider -->
     <div class="top-divider" aria-hidden="true"></div>
 
-    <!-- Hero Banner -->
-   <header class="hero-banner" aria-label="Hero banner">
-  <img
-    src="assets/images/MalinFossum_Banner_Web.png"
-    alt="Malin Fossum portfolio banner"
-    decoding="async"
-    fetchpriority="high"
-  />
-</header>
+    <header class="hero-banner">
+      <img
+        src="assets/images/MalinFossum_Banner_Web.png"
+        alt=""
+        role="presentation"
+        fetchpriority="high"
+      />
+    </header>
 
-    <!-- Main -->
     <main id="content">
       <div class="wrap">
         <div class="stack">
-          <!-- Intro / Current -->
-          <section class="card" aria-labelledby="intro-title">
-            <h1 id="intro-title">Hi, I’m Malin.</h1>
+          <section class="card">
+            <h1>Hi, I’m Malin.</h1>
             <p>
-              I’m transitioning from social work to software development, building
-              practical projects with empathy and intention.
+              I’m an IT student transitioning from social work to software
+              development, with a strong focus on accessibility, empathy, and
+              clean web fundamentals.
             </p>
 
-            <div class="meta" aria-label="Current status">
-              <span class="pill">Now: GET Academy — Start IT (coding study)</span>
-              <span class="pill">Focus: fundamentals + real projects</span>
+            <div class="meta">
+              <span class="pill">GET Academy — Start IT</span>
+              <span class="pill">Fundamentals & real projects</span>
             </div>
 
-            <div class="cta-row" aria-label="Primary links">
-              <a
-                class="cta"
-                href="https://github.com/malinfossum"
-                target="_blank"
-                rel="noopener"
-                >View GitHub</a
-              >
-              <a
-                class="cta secondary"
-                href="https://linkedin.com/in/malinfossum"
-                target="_blank"
-                rel="noopener"
+            <div class="cta-row">
+              <a class="cta" href="https://github.com/malinfossum">GitHub</a>
+              <a class="cta secondary" href="https://linkedin.com/in/malinfossum"
                 >LinkedIn</a
               >
               <a class="cta secondary" href="mailto:malinfossum.dev@proton.me"
@@ -549,124 +291,61 @@
             </div>
           </section>
 
-          <!-- Projects (minimal, honest “current state”) -->
-          <section class="card" aria-labelledby="projects-title">
-            <h2 id="projects-title">Projects</h2>
+          <section class="card">
+            <h2>Projects</h2>
             <p>
-              I’m currently building and polishing projects as part of my study.
-              This section will be updated continuously.
+              A curated overview of my ongoing learning and projects from GET
+              Academy — focused on clarity, fundamentals, and steady progression.
             </p>
 
-            <div class="list" role="list">
-              <article class="project" role="listitem">
-                <div class="project-title">
-                  <h3>Portfolio Website</h3>
-                  <small>In progress</small>
-                </div>
-                <p>
-                  Ultra-minimal personal site focused on performance, accessibility,
-                  and a clean visual identity.
-                </p>
-                <div class="tags" aria-label="Tech tags">
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">Performance</span>
-                  <span class="tag">A11y</span>
-                </div>
-              </article>
-
-              <article class="project" role="listitem">
-                <div class="project-title">
-                  <h3>Study Builds</h3>
-                  <small>Coming soon</small>
-                </div>
-                <p>
-                  Small, focused builds from GET Academy — fundamentals, small apps,
-                  and clear documentation.
-                </p>
-                <div class="tags" aria-label="Tech tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">Git</span>
-                  <span class="tag">Learning</span>
-                </div>
-              </article>
-            </div>
+            <article class="project">
+              <div class="project-title">
+                <h3>Portfolio Website</h3>
+                <small>In progress</small>
+              </div>
+              <p>
+                A personal site focused on performance, accessibility, and calm
+                visual structure.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">A11y</span>
+              </div>
+            </article>
           </section>
 
-          <!-- About (short + credible) -->
-          <section class="card" aria-labelledby="about-title">
-            <h2 id="about-title">About</h2>
+          <section class="card">
+            <h2>About</h2>
             <p>
-              I care about clarity, structure, and real-world impact. I’m at my
-              best when I can combine technical problem-solving with strong
-              communication and empathy.
+              I value clarity, structure, and real-world impact. I work best when
+              technical problem-solving is combined with strong communication
+              and empathy.
             </p>
           </section>
         </div>
       </div>
     </main>
 
-    <!-- Smooth Divider Above Footer -->
     <div class="footer-divider" aria-hidden="true"></div>
 
-    <!-- Footer -->
-    <footer class="footer" aria-label="Footer">
+    <footer>
       <p>© 2026 Malin Fossum — Created with empathy and intention.</p>
 
-      <div class="social-icons" aria-label="Social links">
-        <a
-          href="https://github.com/malinfossum"
-          target="_blank"
-          rel="noopener"
-          aria-label="GitHub"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.773 8.205 11.365.6.112.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.744.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.808 1.304 3.492.997.108-.776.418-1.305.762-1.606-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.47-2.381 1.236-3.221-.124-.304-.536-1.528.117-3.184 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 0 1 3.004-.404c1.02.005 2.045.137 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.656.243 2.88.12 3.184.77.84 1.235 1.911 1.235 3.221 0 4.61-2.804 5.624-5.476 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.902-.014 3.293 0 .32.216.694.825.576C20.565 22.27 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"
-            />
-          </svg>
-        </a>
-
+      <div class="social-icons">
+        <a href="https://github.com/malinfossum" aria-label="GitHub">GitHub</a>
         <a
           href="https://linkedin.com/in/malinfossum"
-          target="_blank"
-          rel="noopener"
           aria-label="LinkedIn"
+          >LinkedIn</a
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M4.98 3.5a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96zM.5 23.5h8.96v-13H.5v13zM16.5 10.5c-2.43 0-3.54 1.33-4.16 2.26v-1.93h-8.8v13h8.8v-7.28c0-.39.03-.78.15-1.07.33-.79 1.08-1.6 2.33-1.6 1.64 0 2.29 1.21 2.29 2.98v6.97h8.81v-7.47c0-4.02-2.15-5.91-5.42-5.91z"
-            />
-          </svg>
-        </a>
-
-        <a href="mailto:malinfossum.dev@proton.me" aria-label="Email">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M12 13.065 0 6V4l12 7.065L24 4v2l-12 7.065zM0 8v12h24V8l-12 7.065L0 8z"
-            />
-          </svg>
-        </a>
+        <a href="mailto:malinfossum.dev@proton.me" aria-label="Email"
+          >Email</a
+        >
       </div>
 
       <p>
-        <a
-          href="docs/Malin_Web_Performance_Checklist.html"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="docs/Malin_Web_Performance_Checklist.html">
           Web Performance Checklist
         </a>
       </p>
