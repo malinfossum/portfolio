@@ -24,8 +24,8 @@ This site is intentionally simple and honest — built to reflect where I am rig
 
 ## Featured Work
 
-### GET Academy — Learning Index
-A structured index of my ongoing learning and projects from GET Academy.
+### Get Academy — Learning Index
+A structured index of my ongoing learning and projects from Get Academy.
 
 This repository showcases:
 - my learning progression
@@ -54,7 +54,7 @@ Just clean, understandable web fundamentals.
 | Project | Description | Links |
 | --- | --- | --- |
 | Portfolio Website | Minimal, accessible, performance-focused portfolio | Repo |
-| GET Academy Index | Curated overview of learning projects and exercises | Repo |
+| Get Academy Index | Curated overview of learning projects and exercises | Repo |
 | Study Builds | Individual learning projects (added gradually) | In progress |
 
 ---
@@ -83,5 +83,6 @@ Deployed via GitHub Pages:
 - GitHub: https://github.com/malinfossum
 - LinkedIn: https://linkedin.com/in/malinfossum
 - Email: malinfossum.dev@proton.me
+
 
 
