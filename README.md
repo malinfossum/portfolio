@@ -1,10 +1,8 @@
 # Malin Fossum — Portfolio Website
 
-<p align="center">
-  <img src="./MalinFossum_Banner_Web.png" alt="Malin Fossum — Portfolio banner" />
-</p>
+![Malin Fossum – Portfolio banner](assets/images/MalinFossum_Banner_Web.png)
 
-This repository contains the source code for my personal portfolio website — a calm, minimal, and performance-focused site that grows alongside my journey into software development.
+A minimal, accessible, and performance-focused portfolio documenting my transition from social work to software development.
 
 **Live site:** https://malinfossum.github.io/portfolio-website/
 
@@ -14,7 +12,7 @@ This repository contains the source code for my personal portfolio website — a
 Hi, I’m Malin Fossum — an IT student based in Norway.
 
 I’m transitioning from social work to software development, with a strong focus on:
-- empathy, accessibility, and inclusion
+- user-centered thinking, accessibility, and inclusion
 - clear structure and readable code
 - thoughtful, user-centered design
 
@@ -24,8 +22,8 @@ This site is intentionally simple and honest — built to reflect where I am rig
 
 ## Featured Work
 
-### GET Academy — Learning Index
-A structured index of my ongoing learning and projects from GET Academy.
+### Get Academy — Learning Index
+A structured index of my ongoing learning and projects from Get Academy.
 
 This repository showcases:
 - my learning progression
@@ -44,7 +42,7 @@ This repository showcases:
 - Dark-mode-first design
 - Deployed with GitHub Pages
 
-No frameworks. No build tools.  
+No frameworks. No build tools.
 Just clean, understandable web fundamentals.
 
 ---
@@ -54,7 +52,7 @@ Just clean, understandable web fundamentals.
 | Project | Description | Links |
 | --- | --- | --- |
 | Portfolio Website | Minimal, accessible, performance-focused portfolio | Repo |
-| GET Academy Index | Curated overview of learning projects and exercises | Repo |
+| Get Academy Index | Curated overview of learning projects and exercises | Repo |
 | Study Builds | Individual learning projects (added gradually) | In progress |
 
 ---
@@ -65,8 +63,8 @@ Just clean, understandable web fundamentals.
 Open `index.html` in your browser.
 
 ### Option B — VS Code Live Server
-1. Open the project in VS Code  
-2. Right-click `index.html`  
+1. Open the project in VS Code
+2. Right-click `index.html`
 3. Choose **Open with Live Server**
 
 ---
@@ -83,5 +81,3 @@ Deployed via GitHub Pages:
 - GitHub: https://github.com/malinfossum
 - LinkedIn: https://linkedin.com/in/malinfossum
 - Email: malinfossum.dev@proton.me
-
-
