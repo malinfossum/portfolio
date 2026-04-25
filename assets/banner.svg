@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" width="1280" height="280" role="img" aria-label="Malin Fossum — Selected work">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#14110d"/>
+      <stop offset="100%" stop-color="#0a0908"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="280" fill="url(#bg)"/>
+
+  <text x="640" y="135" text-anchor="middle"
+        fill="#f0ebe4"
+        font-family="'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif"
+        font-size="68" font-weight="400" letter-spacing="1.5">Malin Fossum</text>
+
+  <line x1="580" y1="170" x2="700" y2="170" stroke="#c9a96e" stroke-width="1.5"/>
+
+  <text x="640" y="205" text-anchor="middle"
+        fill="#8f877e"
+        font-family="'Optima', 'Candara', 'Calibri', 'Segoe UI', system-ui, sans-serif"
+        font-size="20" font-weight="400" letter-spacing="4">Selected work.</text>
+</svg>

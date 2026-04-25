@@ -7,7 +7,7 @@
 
     <meta
       name="description"
-      content="Malin Fossum — A minimal, accessible portfolio documenting my transition from social work to software development."
+      content="Malin Fossum — Selected work by a student developer in Norway, transitioning from social work to software."
     />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0a0908" />
@@ -18,20 +18,13 @@
     <meta property="og:title" content="Malin Fossum — Portfolio" />
     <meta
       property="og:description"
-      content="A calm, performance-focused portfolio built with clarity and intention."
+      content="Selected work by Malin Fossum — student developer in Norway, focused on accessibility and clean structure."
     />
-    <meta
-      property="og:image"
-      content="assets/images/MalinFossum_Banner_Web.png"
-    />
+    <meta property="og:image" content="assets/banner-og.png" />
     <meta property="og:type" content="website" />
 
     <!-- Preload hero banner -->
-    <link
-      rel="preload"
-      as="image"
-      href="assets/images/MalinFossum_Banner_Web.png"
-    />
+    <link rel="preload" as="image" href="assets/banner.svg" type="image/svg+xml" />
 
   </head>
 
@@ -40,8 +33,8 @@
 
     <header class="hero-banner">
       <img
-        src="assets/images/MalinFossum_Banner_Web.png"
-        alt="Malin Fossum – Portfolio banner"
+        src="assets/banner.svg"
+        alt="Malin Fossum — Selected work"
         fetchpriority="high"
       />
     </header>
@@ -53,53 +46,57 @@
           <section class="card">
             <h1>Hi, I’m Malin.</h1>
             <p>
-              I’m an IT student transitioning from social work to software
-              development, with a strong focus on accessibility, inclusion, and
-              clean web fundamentals.
+              From a background in social work, I’m now studying software
+              development at Get Academy in Norway. I focus on accessibility,
+              clean structure, and strong fundamentals.
             </p>
-
-            <div class="meta">
-              <span class="pill">Get Academy — Start IT</span>
-              <span class="pill">Fundamentals & real projects</span>
-            </div>
-
-            <div class="cta-row">
-              <a class="cta" href="https://github.com/malinfossum">GitHub</a>
-              <a class="cta secondary" href="https://linkedin.com/in/malinfossum"
-                >LinkedIn</a
-              >
-              <a class="cta secondary" href="mailto:malinfossum.dev@proton.me"
-                >Contact</a
-              >
-            </div>
           </section>
 
           <!-- Projects -->
           <section class="card">
             <h2>Projects</h2>
-            <p>
-              A small selection of what I’m building right now — with a focus on
-              clean fundamentals and steady progress.
-            </p>
+            <p>A small selection of what I’m building right now.</p>
 
             <div class="list">
               <a
                 class="project project-link"
-                href="https://malinfossum.github.io/portfolio-website/"
+                href="https://github.com/malinfossum/ember-black"
                 target="_blank"
                 rel="noopener"
               >
                 <div class="project-title">
-                  <h3>Portfolio Website</h3>
+                  <h3>Ember Black</h3>
+                  <small>Shipped</small>
+                </div>
+                <p>
+                  A warm, OLED-friendly VS Code theme. First public release.
+                </p>
+                <div class="tags">
+                  <span class="tag">VS Code</span>
+                  <span class="tag">Design</span>
+                  <span class="tag">Open Source</span>
+                </div>
+              </a>
+
+              <a
+                class="project project-link"
+                href="https://github.com/malinfossum/ignite"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="project-title">
+                  <h3>Ignite</h3>
                   <small>In progress</small>
                 </div>
                 <p>
-                  A personal site focused on performance, accessibility, and
-                  calm visual structure.
+                  An ADHD-friendly, open-source task app. A small flame, kept
+                  going.
                 </p>
                 <div class="tags">
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
+                  <span class="tag">PWA</span>
+                  <span class="tag">MVC</span>
+                  <span class="tag">IndexedDB</span>
+                  <span class="tag">Vanilla JS</span>
                 </div>
               </a>
 
@@ -114,8 +111,8 @@
                   <small>Active</small>
                 </div>
                 <p>
-                  A curated index of my ongoing learning, exercises, and small
-                  projects from Get Academy.
+                  A curated index of my ongoing coursework, exercises, and
+                  small projects from Get Academy.
                 </p>
                 <div class="tags">
                   <span class="tag">HTML</span>
@@ -130,9 +127,10 @@
           <section class="card">
             <h2>About</h2>
             <p>
-              I value clarity, structure, and real-world impact. I work best when
-              technical problem-solving is combined with strong communication
-              and a user-first mindset.
+              Social work taught me to listen carefully and meet people where
+              they are. Software, for me, is the same instinct in a different
+              medium — accessibility and clean structure are how I make sure
+              it shows in the work.
             </p>
           </section>
         </div>
@@ -140,13 +138,17 @@
     </main>
 
     <footer>
-      <p>© 2026 Malin Fossum. All Rights Reserved.</p>
+      <p class="contact">
+        Get in touch —
+        <a href="mailto:malinfossum.dev@proton.me">malinfossum.dev@proton.me</a>
+      </p>
 
       <div class="social-icons">
         <a href="https://github.com/malinfossum">GitHub</a>
         <a href="https://linkedin.com/in/malinfossum">LinkedIn</a>
-        <a href="mailto:malinfossum.dev@proton.me">Email</a>
       </div>
-</footer>
+
+      <p>© 2026 Malin Fossum</p>
+    </footer>
   </body>
 </html>

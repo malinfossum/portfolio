@@ -1,5 +1,6 @@
 :root {
-	--font-display: "Palatino Linotype", "Iowan Old Style", Palatino, Georgia, serif;
+	--font-display:
+		"Palatino Linotype", "Iowan Old Style", Palatino, Georgia, serif;
 	--font-body: Optima, Candara, "Segoe UI", system-ui, sans-serif;
 
 	--bg: #0a0908;
@@ -9,7 +10,7 @@
 
 	--accent: #c9a96e;
 	--accent-hover: #dcc294;
-	--accent-soft: rgba(201, 169, 110, 0.10);
+	--accent-soft: rgba(201, 169, 110, 0.1);
 	--line: rgba(201, 169, 110, 0.18);
 
 	--radius: 16px;
@@ -106,45 +107,6 @@ main {
 	background: var(--surface);
 }
 
-.meta {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	margin-top: 14px;
-	padding-top: 14px;
-	border-top: 1px solid var(--line);
-}
-
-.pill {
-	padding: 6px 10px;
-	border-radius: 999px;
-	border: 1px solid var(--line);
-	background: var(--accent-soft);
-	font-size: 0.9rem;
-}
-
-.cta-row {
-	display: flex;
-	gap: 12px;
-	margin-top: 18px;
-	flex-wrap: wrap;
-}
-
-.cta {
-	padding: 10px 14px;
-	border-radius: 999px;
-	background: var(--accent);
-	color: var(--bg);
-	font-weight: 700;
-}
-
-.cta.secondary {
-	background: transparent;
-	color: var(--accent);
-	border: 1px solid var(--line);
-	font-weight: 600;
-}
-
 /* Projects */
 .list {
 	display: grid;
@@ -175,6 +137,11 @@ main {
 
 .project-title h3 {
 	font-size: 1.05rem;
+}
+
+.project-title small {
+	color: var(--text-muted);
+	font-style: italic;
 }
 
 .tags {
