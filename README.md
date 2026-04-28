@@ -16,6 +16,12 @@ HTML, CSS. Semantic markup, no frameworks, no build tools.
 
 ---
 
+## Open source
+
+[**template**](https://github.com/malinfossum/template) — Reusable web project starter. Three scaffolds, shared design system, dark-mode-first, mobile-first, accessible by default.
+
+---
+
 ## Contact
 
 - GitHub: https://github.com/malinfossum
