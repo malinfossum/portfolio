@@ -217,4 +217,16 @@ footer {
 	html:focus-within {
 		scroll-behavior: auto;
 	}
+
+	.project {
+		transition: none;
+	}
+
+	.project:hover {
+		transform: none;
+	}
+
+	.project-link::after {
+		transition: none;
+	}
 }

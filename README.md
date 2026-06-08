@@ -2,9 +2,7 @@
 
 ![Malin Fossum — Selected work](assets/banner.svg)
 
-Selected web development work. Minimal, dark-mode-first, built for accessibility.
-
-Currently featuring coursework from GET Academy.
+Selected web and desktop development work. Minimal, dark-mode-first, built for accessibility.
 
 → https://malinfossum.github.io/portfolio/
 
