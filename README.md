@@ -24,4 +24,3 @@ HTML, CSS. Semantic markup, no frameworks, no build tools.
 
 - GitHub: https://github.com/malinfossum
 - LinkedIn: https://linkedin.com/in/malinfossum
-- Email: malinfossum.dev@proton.me
