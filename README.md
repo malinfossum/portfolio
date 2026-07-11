@@ -16,7 +16,7 @@ HTML, CSS. Semantic markup, no frameworks, no build tools.
 
 ## Open source
 
-[**template**](https://github.com/malinfossum/template) — Reusable web project starter. Three scaffolds, shared design system, dark-mode-first, mobile-first, accessible by default.
+[**workbench**](https://github.com/malinfossum/workbench) — One canonical workbench: shared design system, copy-to-start scaffolds for web and C#, and a versioned extract tool. Dark-mode-first, accessible by default.
 
 ---
 
