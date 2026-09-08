@@ -115,6 +115,7 @@ main {
 }
 
 .project {
+	position: relative;
 	border: 1px solid var(--line);
 	border-radius: 14px;
 	padding: 14px;
@@ -133,6 +134,7 @@ main {
 	justify-content: space-between;
 	margin-bottom: 6px;
 	align-items: baseline;
+	gap: 12px;
 }
 
 .project-title h3 {
@@ -142,6 +144,7 @@ main {
 .project-title small {
 	color: var(--text-muted);
 	font-style: italic;
+	white-space: nowrap;
 }
 
 .tags {
@@ -159,20 +162,16 @@ main {
 	color: var(--text-muted);
 }
 
-/* Clickable project cards */
-.project-link {
-	display: block;
-	color: inherit;
-	text-decoration: none;
-	position: relative;
-}
-
-.project-link:hover,
-.project-link:focus {
-	color: inherit;
-}
-
+/* The project title covers the whole card, so the card is clickable
+   while the secondary links below it stay separately reachable. */
 .project-link::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 14px;
+}
+
+.project-link::before {
 	content: "↗";
 	position: absolute;
 	top: 14px;
@@ -185,16 +184,37 @@ main {
 		transform 0.2s ease;
 }
 
-.project-link:hover::after,
-.project-link:focus-visible::after {
+.project:hover .project-link::before,
+.project-link:focus-visible::before {
 	opacity: 1;
 	transform: translateY(-1px);
 }
 
-.project-link:focus-visible {
+.project:has(.project-link:focus-visible) {
 	outline: 2px solid var(--accent);
 	outline-offset: 3px;
-	border-radius: 14px;
+}
+
+.project-link:focus-visible {
+	outline: none;
+}
+
+/* Secondary links sit above the title's click target. */
+.project-links {
+	position: relative;
+	z-index: 1;
+	width: fit-content;
+	margin-top: 10px;
+	font-size: 0.9rem;
+}
+
+.project-links a {
+	border-bottom: 1px solid var(--line);
+}
+
+.project-links a:hover,
+.project-links a:focus-visible {
+	border-bottom-color: var(--accent-hover);
 }
 
 /* Footer */
@@ -226,7 +246,7 @@ footer {
 		transform: none;
 	}
 
-	.project-link::after {
+	.project-link::before {
 		transition: none;
 	}
 }
